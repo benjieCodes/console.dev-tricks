@@ -21,8 +21,9 @@
     // 5. TADA! 
 
     function makeBlue() {
-        const pfs = document.querySelector('p');
-        p.style.color = '#001d92';
+        const p = document.querySelector('p');
+        p.style.backgroundColor = '#001d92';
+        p.style.color = 'white';
         p.style.fontSize = '25px'
     }
 
@@ -43,9 +44,11 @@
     // Error
     console.error(`Uncaught ReferenceError: p is not defined. LOL JK it is. :)`);
 
+    // Info 
+    console.info("King George III's urine was blue.")
 
-
-
+    // Testing
+    console.assert(9 + 10 === 21, '9 + 10 is not 21')
 </script>
 
 </html>
