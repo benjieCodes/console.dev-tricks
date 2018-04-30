@@ -91,7 +91,19 @@
     fetch('https://api.github.com/users/benjiecodes').then(data => data.json().then(data => {
         console.timeEnd('Length of time to fetch data:'); // needs to be the same exact string/variable from console.time
         console.log(data);
-    }))
+    }));
+
+    // Table
+
+    function showTable() {
+        console.table(family);
+    }
+    function table() {
+        setTimeout(showTable, 100)
+    };
+
+    table() // Created function for table so that it will appear below fetch method :) 
+
 
 </script>
 
