@@ -27,36 +27,56 @@
         p.style.fontSize = '25px'
     }
 
+    // Clear
+    console.clear();
+    console.log('%c Use above code to clear entire console!', 'font-size: 15px; background: #000000');
+    console.log(`-----------------------------------------------------------------`);
+
+
+
     // Regular
+    console.log('%c Good ol regular console.log!', 'font-size: 15px; background: #000000');
+    console.log(`-----------------------------------------------------------------`);
     console.log('Hello world');
 
-    // Clears the entire console
-    console.clear();
 
 
     const es6 = '⑥'
     // Interpolated
+    console.log('%c Interpolation example!', 'font-size: 15px; background: #000000');
+    console.log(`-----------------------------------------------------------------`);
     console.log('Hello I am a %s string', '💩');
     console.log(`Hello I am a ${es6} string`);
 
     // Styled 
+    console.log('%c Use this example to style your console!', 'font-size: 15px; background: #000000');
+    console.log(`-----------------------------------------------------------------`);
     console.log('%c Mizuno Blue for the win!', 'font-size: 25px; background: #001d92; font-family:"Roboto"');
 
     // Warning
+    console.log('%c Always good to have a warning log!', 'font-size: 15px; background: #000000');
+    console.log(`-----------------------------------------------------------------`);
     console.warn('VIRUS HAS BEEN INSTALLED')
 
     // Error
+    console.log('%c Create errors using this!', 'font-size: 15px; background: #000000');
+    console.log(`-----------------------------------------------------------------`);
     console.error(`Uncaught ReferenceError: p is not defined. LOL JK it is. :)`);
 
     // Info 
+    console.log('%c Info tabs are great, use below!', 'font-size: 15px; background: #000000');
+    console.log(`-----------------------------------------------------------------`);
     console.info("King George III's urine was blue.")
 
     // Testing
+    console.log('%c Use example for good testing', 'font-size: 15px; background: #000000');
+    console.log(`-----------------------------------------------------------------`);
     console.assert(9 + 10 === 21, '9 + 10 is not 21')
 
     // View DOM Elements in detail
     const p = document.querySelector('p');
-
+    console.log('%c Use this to exampine DOM in great detail!', 'font-size: 15px; background: #000000');
+    console.log(`-----------------------------------------------------------------`);
     console.log(p);
     console.dir(p);
 
@@ -67,8 +87,10 @@
         { name: 'Sarah', relationship: 'sister-in-law' },
         { name: 'Dad', relationship: 'dad' }
     ]
-
+    console.log('%c Groups an array in a readable manner!', 'font-size: 15px; background: #000000');
+    console.log(`-----------------------------------------------------------------`);
     family.forEach(family => {
+
         console.groupCollapsed(`${family.name}`)
         console.log(`This is ${family.name}`);
         console.log(`${family.name} is my ${family.relationship}.`);
@@ -76,6 +98,8 @@
     })
 
     // Count
+    console.log('%c Incrementing Count to how many times you use the log', 'font - size: 15px; background: #000000');
+    console.log(`-----------------------------------------------------------------`);
     console.count('Benjie')
     console.count('Benjie')
     console.count('Anna');
@@ -87,6 +111,8 @@
 
 
     // Timing
+    console.log('%c Use this to time how long it takes for something!', 'font-size: 15px; background: #000000');
+    console.log(`-----------------------------------------------------------------`);
     console.time('Length of time to fetch data:')
     fetch('https://api.github.com/users/benjiecodes').then(data => data.json().then(data => {
         console.timeEnd('Length of time to fetch data:'); // needs to be the same exact string/variable from console.time
@@ -99,7 +125,9 @@
         console.table(family);
     }
     function table() {
-        setTimeout(showTable, 100)
+        console.log('%c TABLE FEVER!!! (╯°□°)╯︵ ┻━┻ ', 'font-size: 15px; background: #000000');
+        console.log(`-----------------------------------------------------------------`);
+        setTimeout(showTable, 1000)
     };
 
     table() // Created function for table so that it will appear below fetch method :) 
