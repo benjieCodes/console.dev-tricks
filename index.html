@@ -72,7 +72,7 @@
         console.groupCollapsed(`${family.name}`)
         console.log(`This is ${family.name}`);
         console.log(`${family.name} is my ${family.relationship}.`);
-        console.groupEnd(`${family.name}`)
+        console.groupEnd(`${family.name}`) // needs to be the same string/variable from console.group or console.groupCollapsed
     })
 
     // Count
@@ -84,6 +84,14 @@
     console.count('Anna');
     console.count('Benjie')
     console.count('Anna');
+
+
+    // Timing
+    console.time('Length of time to fetch data:')
+    fetch('https://api.github.com/users/benjiecodes').then(data => data.json().then(data => {
+        console.timeEnd('Length of time to fetch data:'); // needs to be the same exact string/variable from console.time
+        console.log(data);
+    }))
 
 </script>
 
