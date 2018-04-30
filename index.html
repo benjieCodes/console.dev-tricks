@@ -55,8 +55,26 @@
     console.assert(9 + 10 === 21, '9 + 10 is not 21')
 
     // View DOM Elements in detail
+    const p = document.querySelector('p');
+
     console.log(p);
-    console.dir();
+    console.dir(p);
+
+    // Group
+    const family = [
+        { name: 'Anna', relationship: 'spouse' },
+        { name: 'Ayler', relationship: 'sister' },
+        { name: 'Sarah', relationship: 'sister-in-law' },
+        { name: 'Dad', relationship: 'dad' }
+    ]
+
+    family.forEach(family => {
+        console.groupCollapsed(`${family.name}`)
+        console.log(`This is ${family.name}`);
+        console.log(`${family.name} is my ${family.relationship}.`);
+        console.groupEnd(`${family.name}`)
+    })
+
 
 
 </script>
