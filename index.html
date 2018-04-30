@@ -9,8 +9,24 @@
 </head>
 
 <body>
-
-    <script></script>
+    <p onClick="makeBlue()">Looking for the JS Source? Click me!</p>
 </body>
+
+<script>
+
+    // Find JavaScript source 
+    // 1. Inspect p element
+    // 2. Right click element under Element's tab
+    // 3. Break on -> attribute modifications
+    // 4. Activate JS method
+    // 5. TADA! 
+
+    function makeBlue() {
+        const p = document.querySelector('p');
+        p.style.color = #001d92;
+        p.style.fontsize = '25px'
+    }
+
+</script>
 
 </html>
